@@ -1,0 +1,36 @@
+.gridArea{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas:
+        "image"
+        "stats"
+        "evolutions"
+        "attacks";
+    gap: 1rem;
+;
+
+    @media only screen and (min-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "image stats"
+        "evolutions attacks";
+        gap: 2rem;
+    }
+}
+
+.image{
+    grid-area: image;
+}
+
+.stats{
+    grid-area: stats;
+}
+
+.evolutions{
+    grid-area: evolutions;
+}
+
+.attacks{
+    grid-area: attacks;
+}
